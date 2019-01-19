@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Task 2</title>
+    <style>
+        .center {
+            margin: auto;
+            width: 20%;
+            border: 1px solid #000;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <input id="input_id" type="text" name="fname">
+        <input type="button" onclick="myFunction()" value="Capitalize">
+        <p>Output: <span id="output_id"></span></p>
+    </div>
+</body>
+<script src="task2.js"></script>
+<script>function myFunction() {
+    document.getElementById("output_id").innerHTML = Module.capitalize(document.getElementById('input_id').value);
+  }</script>
+</html>
