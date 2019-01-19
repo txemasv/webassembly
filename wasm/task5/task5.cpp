@@ -1,7 +1,7 @@
 #include <emscripten/bind.h>
 #include <emscripten/emscripten.h>
-//#define GLFW_INCLUDE_ES3
-//#include <GLFW/glfw3.h>
+#define GLFW_INCLUDE_ES3
+#include <GLFW/glfw3.h>
 
 using namespace emscripten;
 
@@ -9,6 +9,7 @@ using namespace emscripten;
 int createWindow()
 {
     //TODO
+	// false in case something is wrong
 	return 0;
 }
 
@@ -16,6 +17,7 @@ int createWindow()
 int init()
 {
 	//TODO
+	// true in case everithing is ok
 	return 1;
 }
 
@@ -28,7 +30,6 @@ void draw()
 //Binded function
 std::string myFunction()
 {
-	//TODO
 	return "hello!!";
 }
 
