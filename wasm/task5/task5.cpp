@@ -29,7 +29,7 @@ void draw()
 std::string myFunction()
 {
 	//TODO
-	return "hello!";
+	return "hello!!";
 }
 
 int main()
