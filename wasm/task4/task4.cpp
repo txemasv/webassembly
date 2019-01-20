@@ -32,10 +32,9 @@ POINT rotatePoint(float angle, POINT &p)
 
 POINT pCenter {0.0f, 0.25f}; //rectangle center
 
-//Window context to draw
+//Window context to draw (using glfw3)
 int createWindow()
 {
-
     if (!glfwInit()) {
         fputs("Failed to initialize GLFW", stderr);
         emscripten_force_exit(EXIT_FAILURE);
@@ -246,7 +245,6 @@ void draw()
 
 int main() 
 {
-
     //Create Window
     createWindow();
 
