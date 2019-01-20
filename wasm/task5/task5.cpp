@@ -5,6 +5,10 @@
 
 using namespace emscripten;
 
+/*
+ * Adding comments in my personal branch
+ * */
+
 //Window context to draw
 int createWindow()
 {
@@ -13,11 +17,11 @@ int createWindow()
 	return 0;
 }
 
-// Init programObject with shaders
+// Init programObject with Shaders
 int init()
 {
 	//TODO
-	// true in case everithing is ok
+	// true in case everything is OK
 	return 1;
 }
 
@@ -30,7 +34,7 @@ void draw()
 //Binded function
 std::string myFunction()
 {
-	return "hello!!";
+	return "hello comments to new branch!!";
 }
 
 int main()
