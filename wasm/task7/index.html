@@ -139,8 +139,9 @@
 
     <div class="wrapper">
         <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+        <b id=rgb >rgb</b>
         <p />
-        <input type="button" onclick="myFunction()" value="Do it">
+        <input type="button" onclick="randomColor()" value="Random color">
     </div>
 
 
@@ -221,8 +222,9 @@
       </script>
     <script async type="text/javascript" src="task7.js"></script>
     <script>
-      function myFunction() {
-        Module.myFunction();
+      function randomColor() {
+        var element = document.getElementById("rgb");
+        element.innerHTML = Module.randomColor();
       }
     </script>
 </body>

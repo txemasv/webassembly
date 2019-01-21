@@ -187,15 +187,20 @@ void draw()
 }
 
 //Binded function
-void myFunction()
+std::string randomColor()
 {
 	r = (rand() % 100) * 0.01f;
 	g = (rand() % 100) * 0.01f;
 	b = (rand() % 100) * 0.01f;
 
-	float v1 = (rand() % 100) * 0.01f;
-	std::cout << "rgb (" << r << ", " << "g" << g << ", " << "b" << b << ")";
-	std::cout << std::endl;
+	std::string rgb = "rgb ("
+			+ std::to_string(r).substr(0,4) + ", "
+			+ std::to_string(g).substr(0,4) + ", "
+			+ std::to_string(b).substr(0,4) + ")";
+
+	std::cout << rgb << std::endl;
+
+	return rgb;
 }
 
 int main()
@@ -215,5 +220,5 @@ int main()
 
 EMSCRIPTEN_BINDINGS(my_module)
 {
-	function("myFunction", &myFunction);
+	function("randomColor", &randomColor);
 }
