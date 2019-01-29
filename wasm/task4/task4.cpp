@@ -1,5 +1,7 @@
 #include <emscripten/bind.h>
 #include <emscripten/emscripten.h>
+
+//window and context management and input management
 #define GLFW_INCLUDE_ES3
 #include <GLFW/glfw3.h>
 
